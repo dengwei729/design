@@ -15,12 +15,6 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>jmock</groupId>
-            <artifactId>jmock</artifactId>
-            <scope>test</scope>
-            <version>2.5.1</version>
-        </dependency>
     </dependencies>
 
 
