@@ -1,7 +1,9 @@
 package com.lrn.test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Decription TODO
@@ -26,5 +28,12 @@ public class Test {
         list = list.subList(list.size()-2,list.size());
         System.out.println(list);
 
+        int a = 8;
+        System.out.println(a/3);
+
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("test", "1");
+        map.put("test", "2");
+        System.out.println(map);
     }
 }
