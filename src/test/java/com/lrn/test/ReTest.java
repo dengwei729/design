@@ -568,5 +568,42 @@ public class ReTest {
         } else {
             System.out.println("NO MATCH");
         }
+
+
+        String test = "开关 ChinaRedEnvelopeAssetAbility.redEnvelopeRouteUmpForBizCodeGray 变更, 变更值 {\"ali.china.taobao"
+            + ".mobilephone\":10000,\"ali.china.tmall.tmclub\":10000,\"ali.china.tmall.yiyao.normal\":10000,\"ali"
+            + ".china.tmall.car";
+        Pattern switchP = Pattern.compile("(开关)(.*)(变更,.*)");
+        Matcher switchM = switchP.matcher(test);
+        if (switchM.find()) {
+            System.out.println("Found value 1: " + switchM.group(0) );
+            System.out.println("Found value 2: " + switchM.group(1) );
+            System.out.println("Found value 3: " + switchM.group(2) );
+            System.out.println("Found value 4: " + switchM.group(3) );
+        }
+
+        String db="minerals,CBU_MINERALS_APP,CBU_GEMBONE_APP\n"
+            + "drugtraceplatform,ALIJK_TRACECODE_APP,TRACECODEDB_APP\n"
+            + "tdp,CAINIAO_TMSTCP_APP\n"
+            + "tmallrightsweb,TMALL_RIGHTS_APP,APP_DBH_SERVICEONE,MISC_TB_APP,APP_CRM_SERVICEONE,"
+            + "APP_AUC_DBH_SERVICEONE\n"
+            + "incbook,INCBOOK_APP\n"
+            + "spoke,WALMART_APP,ICBU_TRANCNT_HZ_APP\n"
+            + "globalbuys,GLOBALBUYS_APP,WSNS_NEED_USER_APP,WSNS_NEED_APP,IDLE_AUCTIONS_APP\n"
+            + "cilogistics,CAINIAO_LOGISTI_APP\n"
+            + "shooting,SHOOTING_APP\n"
+            + "trade_sub_notify,SCRM_APP,RIGHT_CENTER_APP,RP_BUYER_APP,NOTIFY_TRADESUB_APP_PRE,CBU_MSC_APP,"
+            + "CAINIAO_SMS_APP,RIGHTCENTER_APP,RP_SELLER_APP\n"
+            + "ksr,KSR_SUB_APP,KSR_PLUS_APP\n"
+            + "p4p-settle,CBU_SETTLE_APP,P4P-QUAKE-V587\n"
+            + "sale-forecasting-platform,TM_SALEFORECAST_APP\n"
+            + "thrones,TMALL_MIAOSHOP_APP\n"
+            + "tripmc,TRIPMC_APP\n"
+            + "coin-selina-intent,COIN_DB_APP";
+        String[] dbs = db.split("\n");
+        for (int i=0; i<dbs.length; i++) {
+            System.out.println(dbs[i]);
+        }
+
     }
 }
