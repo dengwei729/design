@@ -15,10 +15,10 @@ import java.util.Map;
 public class Test {
 
     public static void main(String[] args) {
-        //List<String> list = new ArrayList<String>();
-        ////list.add("a");
-        ////list.add("c");
-        ////list.add("b");
+        List<String> list = new ArrayList<String>();
+        //list.add("a");
+        //list.add("c");
+        //list.add("b");
         //Collections.reverse(list);
         //
         //List<String> l2 ;
@@ -26,25 +26,25 @@ public class Test {
         //    l2 = list.subList(0,3);
         //    System.out.println(l2);
         //}
-        //
+
         //System.out.println(list);
         //list = list.subList(list.size()-2,list.size());
         //System.out.println(list);
-        //
-        //int a = 8;
-        //System.out.println(a/3);
-        //
-        //Map<String, String> map = new HashMap<String, String>();
-        //map.put("test", "1");
-        //map.put("test", "2");
-        //System.out.println(map);
-        //System.out.println(map.get("ab"));
-        //
-        //String test = "test$test1$test2";
-        //String[] testL = test.split("\\$");
-        //System.out.println(testL);
 
-        List<Integer> listI = new ArrayList<>();
+        int a = 8;
+        System.out.println(a/3);
+
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("test", "1");
+        map.put("test", "2");
+        System.out.println(map);
+        System.out.println(map.get("ab"));
+
+        String test = "test$test1$test2";
+        String[] testL = test.split("\\$");
+        System.out.println(testL);
+
+        List<Integer> listI = new ArrayList<Integer>();
         //listI.add(0);
         //listI.add(0);
         //listI.add(0);
@@ -67,16 +67,16 @@ public class Test {
         //listI.add(1493);
         //listI.add(805);
 
-        listI.add(1508);
-        listI.add(186);
-        listI.add(136);
-        listI.add(142);
-        listI.add(2301);
-        listI.add(2225);
-        listI.add(1846);
-        listI.add(992);
-        listI.add(1858);
-        listI.add(2944);
+        listI.add(0);
+        listI.add(0);
+        listI.add(0);
+        listI.add(261);
+        listI.add(291);
+        listI.add(220);
+        listI.add(259);
+        listI.add(297);
+        listI.add(305);
+        listI.add(397);
 
         for (int i=0; i<listI.size(); i++) {
             if (i>=5) {

@@ -21,20 +21,20 @@ public class IteratorTest {
     }
 
     public static void main(String args[]) {
-        List<Model> models = new ArrayList<>();
-        models.add(new Model(1));
-        models.add(new Model(2));
-        models.add(new Model(3));
-        models.add(new Model(4));
-
-        Iterator<Model> modelIterator = models.iterator();
-        Model model = modelIterator.next();
-        Model model1 = modelIterator.next();
-        System.out.println(model);
-        System.out.println(model1);
-        modelIterator.remove();
-        model = null;
-        System.out.println(model);
+        //List<Model> models = new ArrayList<>();
+        //models.add(new Model(1));
+        //models.add(new Model(2));
+        //models.add(new Model(3));
+        //models.add(new Model(4));
+        //
+        //Iterator<Model> modelIterator = models.iterator();
+        //Model model = modelIterator.next();
+        //Model model1 = modelIterator.next();
+        //System.out.println(model);
+        //System.out.println(model1);
+        //modelIterator.remove();
+        //model = null;
+        //System.out.println(model);
 
     }
 }
