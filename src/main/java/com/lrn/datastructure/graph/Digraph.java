@@ -18,7 +18,7 @@ public class Digraph<T> {
     // 当前结点是否还有下一个结点，判断递归是否结束的标志
     private boolean noNext = false;
     // 所有路径的结果集
-    private List<List<T>> result = new ArrayList<>();
+    private List<List<T>> result = new ArrayList<List<T>>();
 
     public Digraph(double[][] matrix, T[] vertex) {
         if (matrix.length != matrix[0].length) {
@@ -79,7 +79,7 @@ public class Digraph<T> {
     public List<List<T>> startSearch() {
         for (int i = 0; i < countPathNumber(); i++) {
             // 用于存储遍历过的点
-            List<T> path = new LinkedList<>();
+            List<T> path = new LinkedList<T>();
             noNext = false;
             // 开始遍历
             DFS(0, path);
@@ -138,7 +138,7 @@ public class Digraph<T> {
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 },
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } };
 
-        Digraph<String> graph = new Digraph<>(matrix, vertex);
+        Digraph<String> graph = new Digraph<String>(matrix, vertex);
         System.out.println(graph.startSearch());
     }
 }

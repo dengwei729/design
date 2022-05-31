@@ -10,9 +10,9 @@ import java.util.List;
 public class Test {
 
     public static void main(String[] args) {
-        List<String> a = new ArrayList<>();
+        List<String> a = new ArrayList<String>();
         a.add("test");
-        List<String> b = new ArrayList<>();
+        List<String> b = new ArrayList<String>();
         b.add("test");
         b.add("test1");
 

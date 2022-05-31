@@ -22,7 +22,7 @@ public class StackDemo {
     }
 
     public static void main(String args[]) {
-        Stack<Integer> st = new Stack<>();
+        Stack<Integer> st = new Stack<Integer>();
         System.out.println("stack: " + st);
         showPush(st, 42);
         showPush(st, 66);

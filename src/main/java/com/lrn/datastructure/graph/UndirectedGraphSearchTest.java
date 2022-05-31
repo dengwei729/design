@@ -24,16 +24,16 @@ public class UndirectedGraphSearchTest {
 
     @Before
     public void before(){
-        node1 = new UndirectedGraphNode<>(1);
-        node2 = new UndirectedGraphNode<>(2);
-        node3 = new UndirectedGraphNode<>(3);
-        node4 = new UndirectedGraphNode<>(4);
-        node5 = new UndirectedGraphNode<>(5);
-        node6 = new UndirectedGraphNode<>(6);
-        node7 = new UndirectedGraphNode<>(7);
-        node8 = new UndirectedGraphNode<>(8);
-        node9 = new UndirectedGraphNode<>(9);
-        node10 = new UndirectedGraphNode<>(10);
+        node1 = new UndirectedGraphNode<Integer>(1);
+        node2 = new UndirectedGraphNode<Integer>(2);
+        node3 = new UndirectedGraphNode<Integer>(3);
+        node4 = new UndirectedGraphNode<Integer>(4);
+        node5 = new UndirectedGraphNode<Integer>(5);
+        node6 = new UndirectedGraphNode<Integer>(6);
+        node7 = new UndirectedGraphNode<Integer>(7);
+        node8 = new UndirectedGraphNode<Integer>(8);
+        node9 = new UndirectedGraphNode<Integer>(9);
+        node10 = new UndirectedGraphNode<Integer>(10);
 
         node1.neighborList.add(node2);
         node1.neighborList.add(node3);
@@ -77,7 +77,7 @@ public class UndirectedGraphSearchTest {
 
     @Test
     public void searchDFSTest(){
-        UndirectedGraphSearch<Integer> undirectedGraphSearch = new UndirectedGraphSearch<>();
+        UndirectedGraphSearch<Integer> undirectedGraphSearch = new UndirectedGraphSearch<Integer>();
         undirectedGraphSearch.searchDFS(node1);
 
         String expectedSearchPath = "1->2->4->5->6->3->7->8->9->10";
@@ -86,7 +86,7 @@ public class UndirectedGraphSearchTest {
 
     @Test
     public void searchBFSTest(){
-        UndirectedGraphSearch<Integer> undirectedGraphSearch = new UndirectedGraphSearch<>();
+        UndirectedGraphSearch<Integer> undirectedGraphSearch = new UndirectedGraphSearch<Integer>();
         undirectedGraphSearch.searchBFS(node1);
 
         String expectedSearchPath = "1->2->3->4->5->6->7->8->9->10";
