@@ -7,6 +7,11 @@
     <groupId>com.lrn.dw</groupId>
     <artifactId>design</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>basic</module>
+        <module>algorithm</module>
+        <module>pattern</module>
+    </modules>
     <build>
         <plugins>
             <plugin>
