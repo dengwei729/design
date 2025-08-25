@@ -9,11 +9,11 @@ import java.util.Random;
 public class Emperor {
 
     // 定义最多能产生的实例数量
-    private static  int maxNumOfEmperor = 2;
+    private static final int maxNumOfEmperor = 2;
     // 每个皇帝有名字
-    private static ArrayList<String> nameList = new ArrayList<String>();
+    private static final ArrayList<String> nameList = new ArrayList<String>();
 
-    private static ArrayList<Emperor> emperorList = new ArrayList<Emperor>();
+    private static final ArrayList<Emperor> emperorList = new ArrayList<Emperor>();
 
     // 当前皇帝序列号
     private static int countNumOfEmperor=0;
